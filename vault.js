@@ -1,13 +1,13 @@
 'use strict';
 module.exports = function() {
-var lock = {};
+var purple = {};
   function setValue(key, value){
-    lock[key] = value;
+    purple[key] = value;
     return key;
   }
   function getValue(key){
-  if(lock.hasOwnProperty(key)){
-  return lock[key];
+  if(purple.hasOwnProperty(key)){
+  return purple[key];
 }else{
   return null;
 }
